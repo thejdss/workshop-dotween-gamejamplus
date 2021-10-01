@@ -479,7 +479,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 583777768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1912185496}
+        m_TargetAssemblyTypeName: ButtonFade, Assembly-CSharp
+        m_MethodName: Fade
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &583777768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +612,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 696136960}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1257308416}
+        m_TargetAssemblyTypeName: ButtonAnimate, Assembly-CSharp
+        m_MethodName: OpenCloseMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &696136960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,7 +838,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 945722814}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1912185496}
+        m_TargetAssemblyTypeName: ButtonFade, Assembly-CSharp
+        m_MethodName: Fade
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &945722814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,6 +1156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257308415}
+  - component: {fileID: 1257308416}
   m_Layer: 5
   m_Name: downright
   m_TagString: Untagged
@@ -1149,6 +1186,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1257308416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257308414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8335d76728edff24eb2f2c118a1e1c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startpos: {fileID: 696136958}
+  button_one: {fileID: 1571618601}
+  button_two: {fileID: 1872960794}
+  button_one_go: {x: 0, y: 100, z: 0}
+  button_two_go: {x: 0, y: 200, z: 0}
+  animTime: 1
+  ease: 1
+  isOpen: 1
 --- !u!1 &1571618600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,7 +1488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1641256138}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1912185496}
+        m_TargetAssemblyTypeName: ButtonFade, Assembly-CSharp
+        m_MethodName: Fade
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1641256138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,6 +1827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912185495}
+  - component: {fileID: 1912185496}
   m_Layer: 5
   m_Name: upleft
   m_TagString: Untagged
@@ -1786,6 +1856,20 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1912185496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912185494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ad03d8ddd5d9a48a53ad2f5e0a4b10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  group: {fileID: 457998697}
+  fadeTime: 1
 --- !u!1 &2009795628
 GameObject:
   m_ObjectHideFlags: 0

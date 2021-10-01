@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 920784532}
   - component: {fileID: 920784531}
   - component: {fileID: 920784530}
+  - component: {fileID: 920784529}
   m_Layer: 0
   m_Name: Sphere-DoSimple
   m_TagString: Untagged
@@ -301,6 +302,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &920784529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920784528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e475b8ef381ec4e93ff07f7482da23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objTransform: {fileID: 920784533}
+  animTime: 3
+  ease: 31
 --- !u!135 &920784530
 SphereCollider:
   m_ObjectHideFlags: 0

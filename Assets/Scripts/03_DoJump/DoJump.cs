@@ -1,7 +1,30 @@
 using UnityEngine;
+using DG.Tweening;
 
 public class DoJump : MonoBehaviour
 {
+    public float animTime;
+    public Ease ease;
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            JumpTo(GetPositionToGo());
+        }
+    }
+
+    private void JumpTo(Vector3 point)
+    {
+        transform
+            .DOJump(point, 2, 1, animTime)
+            .SetEase(ease)
+            .OnComplete(() =>
+            {
+                Debug.Log("Pulamoss");
+            });
+    }
+
     private Vector3 GetPositionToGo()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); // Cache this Camera.main for better performance
